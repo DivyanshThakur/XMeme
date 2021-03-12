@@ -1,0 +1,32 @@
+.paper {
+  padding: 15px;
+  margin-top: 20px;
+  background: linear-gradient(
+    to left top,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.6)
+  );
+  box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.2);
+  border-radius: 15px;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+,
+.fileInput {
+  width: 100%;
+  margin: 15px 0;
+}
+
+.buttonSubmit {
+  margin-bottom: "10";
+  border-radius: "5px";
+}
+
+.buttonSubmit:hover {
+  box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.3);
+}

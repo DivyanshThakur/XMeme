@@ -1,0 +1,85 @@
+body {
+  font-family: "Neucha", cursive;
+  min-height: 100vh;
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.logo {
+  border-radius: 15px;
+  height: 100px;
+  border-top: 4px solid;
+  border-bottom: 4px solid;
+  border-left: 1px solid;
+  border-right: 1px solid;
+  box-shadow: 6px 6px 20px rgba(122,122,122, 0.2);
+
+}
+
+.glass {
+  
+  width: 100vh;
+  height: 100vh;
+  background: white;
+  max-height: 90vh;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  border-radius: 2rem;
+  z-index: 2;
+  backdrop-filter: blur(1rem);
+  display: flex;
+}
+
+.memesGrid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.circle1,
+.circle2 {
+  background: white;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.3)
+  );
+  height: 15rem;
+  width: 15rem;
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.circle1 {
+  bottom: 2%;
+  right: 2%;
+}
+.circle2 {
+  left: 2%;
+  top: 10%;
+}
+
+@media only screen and (max-width: 1200px) {
+  .circle1, .circle2 {
+    visibility: hidden;
+  }
+
+  /* body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+  } */
+
+  .glass {
+    overflow: hidden;
+    overflow-y: auto;
+  }
+}
