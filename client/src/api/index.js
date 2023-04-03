@@ -1,7 +1,7 @@
 /* eslint-disable no-template-curly-in-string */
 import axios from 'axios';
 
-const url = 'https://xmeme-divyansh.herokuapp.com/memes';
+const url = 'https://x-meme-eta.vercel.app/memes';
 
 export const fetchMemes = () => axios.get(url);
 export const createMeme = (newMeme) => axios.post(url, newMeme);
